@@ -35,6 +35,5 @@ readFile('input.txt', (err, input) => {
     totalScore += calculateScore(player1, (String.fromCharCode(player2.charCodeAt(0) - 23)));
   });
 
-  // TODO: RESULT 13202 IS TOO HIGH
   console.log(totalScore);
 });
