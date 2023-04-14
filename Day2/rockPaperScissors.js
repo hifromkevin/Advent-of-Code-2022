@@ -27,6 +27,8 @@ const calculateScore = (a, b) => {
 };
 
 readFile('input.txt', (err, input) => {
+  if (err) console.error(err);
+
   const rpsData = input.toString();
   let totalScore = 0;
 
